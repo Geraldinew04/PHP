@@ -3,7 +3,8 @@
 	// $student = isset($_POST['eleve']) ? $_POST['eleve'] : NULL;
 	@$student = filter_var($_POST['eleve'], FILTER_SANITIZE_STRING);
 	$sexe = isset($_POST['sexe']) ? $_POST['sexe'] : NULL;
-	@$teacher = filter_var($_POST['nameTeacher'], FILTER_SANITIZE_STRING);
+	@$teacher = filter_var($_POST['nameTeacher'], FILTER_SANITIZE_STRING);  
+	
 	$excuse = isset($_POST['absence']) ? $_POST['absence'] : NULL;
 	$date = date('d/m/Y') ;
 	$result_excuse = '';
